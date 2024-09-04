@@ -5,11 +5,16 @@ sketchpad.classList.add("sketchpad");
 container.appendChild(sketchpad);
 
 function create_boxes(count){
-    for (let i = 0; i <16; i++){
+    for (let i = 0; i < Math.pow(count,2); i++){
         const box = document.createElement("div");
         box.classList.add("box");
+        box.style.width = `${get_width(count)}px`;
         sketchpad.appendChild(box);
     }
 };
 
-create_boxes();
+function get_width(count){
+    return 900/count;
+}
+
+create_boxes(16);
