@@ -9,6 +9,7 @@ function create_boxes(count){
         const box = document.createElement("div");
         box.classList.add("box");
         box.style.width = `${get_width(count)}px`;
+        box.addEventListener("mouseover", (hovered) => {box.classList.add("hovered")});
         sketchpad.appendChild(box);
     }
 };
@@ -17,4 +18,4 @@ function get_width(count){
     return 900/count;
 }
 
-create_boxes(16);
+create_boxes(100);

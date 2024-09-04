@@ -23,8 +23,11 @@ body {
 
 .box{
     display: flex;
-    box-sizing: border-box;
     flex-grow: 1;
-    width: 25%;
-    border: dashed black;
+    /* box-sizing: border-box;
+    border: solid blue; */
+}
+
+.hovered{
+    background-color: darkgrey;
 }
