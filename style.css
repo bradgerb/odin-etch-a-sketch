@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    border: solid black;
+}
+
+.sketchpad{
+    height: 900px;
+    width: 900px;
+    border: solid black;
+    background-color: white;
+}
