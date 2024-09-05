@@ -29,8 +29,6 @@ function start_over() {
     while (sketchpad.hasChildNodes()){
         sketchpad.removeChild(sketchpad.firstChild);
     }
-    console.log(input);
-    console.log(typeof input);
     if (Number.isInteger(input) && input > 0 && input < 101){
         create_boxes(input);
     }else{
