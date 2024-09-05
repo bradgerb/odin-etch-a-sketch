@@ -4,10 +4,11 @@ body {
 
 .container{
     display: flex;
+    flex-direction: column;
     height: 100vh;
     box-sizing: border-box;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background-color: red;
     border: solid black;
 }
@@ -15,8 +16,8 @@ body {
 .sketchpad{
     display: flex;
     flex-wrap: wrap;
-    height: 900px;
-    width: 900px;
+    height: 800px;
+    width: 800px;
     border: solid black;
     background-color: white;
 }
@@ -28,4 +29,11 @@ body {
 
 .hovered{
     background-color: darkgrey;
+}
+
+.button{
+    box-sizing: border-box;
+    margin: 1rem;
+    padding: 5px 10px;
+    font-size: large;
 }
